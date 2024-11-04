@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+}
+
+.to-do-app {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.input-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.task-list-section {
+    max-height: 90vh;
+    overflow: auto;
+    flex: 2;
+}
+
+.to-do-app h2 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.to-do-app img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: #ff5945;
+    padding: 16px 20px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-left: 10px;
+}
+
+ul {
+    margin-top: 20px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li .edit-icon {
+    margin-left: 10px;
+    cursor: pointer;
+    color: #888;
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    .to-do-app {
+        flex-direction: column;
+        padding: 20px;
+        width: 90vw;
+    }
+
+    .input-section {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    ul li{
+        width: 80vw;
+    }
+    .row{
+        width: 80vw;
+    }
+}
